@@ -16,7 +16,7 @@ export const ItemList = () => {
           </h3>
           <p className="mt-1 text-sm text-gray-500">white</p>
         </div>
-        <p className="text-sm font-medium text-gray-900">$70</p>
+        <p className="text-sm font-medium text-gray-900">$70 - 30% off</p>
       </div>
     </div>
   )
