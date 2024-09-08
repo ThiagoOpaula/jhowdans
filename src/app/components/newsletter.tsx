@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import { Button } from "@/app/components/ui/button"
-import { Input } from "@/app/components/ui/input"
-import { ShoppingCart, Menu, Search, Facebook, Twitter, Instagram } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { ShoppingCart, Menu, Search, Facebook, Twitter, Instagram } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Newsletter() {
   return (
@@ -33,5 +33,5 @@ export function Newsletter() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,20 +1,24 @@
-import { Button } from "@/app/components/ui/button"
-import { Input } from "@/app/components/ui/input"
-import { ShoppingCart, Menu, Search, Facebook, Twitter, Instagram } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/app/components/ui/button";
+import Image from "next/image";
+
+const products = [
+  { image: '/highJumpJhowBucket.jpg', name: 'Bucket', price: '59.99' },
+  { image: '/t-shirt.jpg', name: 'Dry-fit', price: '69.99' },
+  { image: '/volleyball.jpg', name: 'bola de voley', price: '79.99' },
+  { image: '/shoes.jpg', name: 'bucket 2', price: '89.99' },
+];
 
 
 export const Products = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32" >
       <div className=" px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Products</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Principais produtos</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[1, 2, 3, 4].map((i) => (
+          {products.map((product, i) => (
             <div key={i} className="group relative overflow-hidden rounded-lg">
               <Image
-                src={`/highJumpJhowBucket.png`}
+                src={product.image}
                 width={300}
                 height={300}
                 alt={`Product ${i}`}
@@ -24,13 +28,13 @@ export const Products = () => {
                 <Button variant="secondary">Veja</Button>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg">Bucket #{i}</h3>
-                <p className="text-muted-foreground">R$59.99</p>
+                <h3 className="font-semibold text-lg">{product.name}</h3>
+                <p className="text-muted-foreground">R$ {product.price}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

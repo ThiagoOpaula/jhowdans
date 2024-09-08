@@ -1,8 +1,8 @@
-"user client"
+"user client";
 
-import { Button } from "@/app/components/ui/button"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/app/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className=" px-4 md:px-12">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <Image
-            src='/hero.jpg'
+            src='/hero2.jpg'
             width={700}
             height={400}
             alt="Hero Image"
@@ -33,5 +33,5 @@ export const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
