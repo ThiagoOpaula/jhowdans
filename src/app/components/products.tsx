@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const products = [
   { image: '/highJumpJhowBucket.jpg', name: 'Bucket', price: '59.99' },
-  { image: '/t-shirt.jpg', name: 'Dry-fit', price: '69.99' },
+  { image: '/t-shirt.jpg', name: 'Dry-fit', price: '129.99' },
   { image: '/volleyball.jpg', name: 'bola de voley', price: '79.99' },
-  { image: '/shoes.jpg', name: 'bucket 2', price: '89.99' },
+  { image: '/shoes.jpg', name: 'jhowdans speed', price: '189.99' },
 ];
 
 
