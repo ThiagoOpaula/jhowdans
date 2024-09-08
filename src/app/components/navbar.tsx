@@ -13,7 +13,7 @@ export const Navbar = () => {
           <span className="font-bold">Jhowdans</span>
         </Link>
         <nav className="ml-auto flex items-center space-x-4 sm:space-x-6">
-          <Link href="#" className="hidden sm:block text-sm font-medium">Loja</Link>
+          <Link href="/dashboard" className="hidden sm:block text-sm font-medium">Loja</Link>
           <Link href="#" className="hidden sm:block text-sm font-medium">Parcerias</Link>
           <Link href="/about" className="hidden sm:block text-sm font-medium">Sobre</Link>
           <Button size="icon" variant="ghost">
